@@ -23,6 +23,7 @@ figure {
 }
 section {
   padding: 70px 0;
+  overflow: hidden;
 }
 
 .section-dark {
@@ -57,7 +58,7 @@ h3 {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 70px;
   font-weight: 900;
   margin-bottom: 30px;
 }
@@ -69,6 +70,8 @@ h2 {
 h3 {
   font-size: 30px;
 }
+
+
 
 /* Header and navigation */
 header {
@@ -85,7 +88,7 @@ header {
 .menu {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .menu-list {
   display: none;
@@ -119,7 +122,34 @@ header {
   background-color: #bf0034;
 }
 
+.close-menu svg {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+  }
+.close-menu{
+  display: none;
+}
+
+.opened{
+  display: block;
+}
+
+nav {
+  text-align: right;
+}
+
+
 @media screen and (min-width: 768px) {
+  h1{
+    font-size: 100px;
+  }
+  .close-menu{
+    display: none;
+  }
+  .menu{
+    margin-bottom: 100px;
+  }
   .menu-list {
     display: flex;
     gap: 20px;
@@ -303,6 +333,22 @@ figcaption {
 }
 
 /* section quote */
+#quote{
+  position: relative;
+}
+
+#quote::before{
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  z-index: -1;
+  content: "";
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #244f40;
+}
+
 .quote-wrapper {
   display: flex;
   align-items: center;
@@ -310,6 +356,7 @@ figcaption {
 }
 blockquote {
   max-width: 80%;
+  z-index: 0;
 }
 .quote-text {
   color: #fff;
