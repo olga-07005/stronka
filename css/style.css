@@ -74,7 +74,7 @@ h3 {
 header {
   padding: 30px 0;
   background-color: antiquewhite;
-  background-image: url("../images/hero-background-2.jpg");
+  background-image: url("../images/headerrr.jpeg");
   background-position: center;
   height: 100vh;
   background-repeat: no-repeat;
@@ -390,23 +390,35 @@ textarea {
   padding: 50px 0;
   color: #fff;
   font-weight: 100;
+  text-align: center;
 }
 
 .footer-copy-text {
   margin-bottom: 30px;
 }
 
-.footer-bootom-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.footer-text p {
+
+.footer-text p{
   margin-bottom: 12px;
 }
 
 .footer-icons a {
   width: 40px;
   height: 40px;
+}
+
+@media screen and (min-width: 995px){
+  .section-footer{
+    text-align: left;
+  }
+  .footer-bootom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-text p:last-child{
+  margin-bottom: 0;
 }
