@@ -6,7 +6,7 @@ const closeMenu = document.querySelector(".close-menu");
 
 const menuList = document.querySelector(".menu-list");
 
-//  funkcja dodania classy opened
+//  funkcja dodania classy opened 
 
 function changeClass() {
   closeMenu.classList.toggle("opened");
