@@ -30,7 +30,7 @@ section {
   background-color: #046444;
 }
 .section-uniqe {
-  background-color: #43967A;
+  background-color: #295928;
 }
 .container {
   max-width: 100%;
@@ -135,6 +135,9 @@ header {
   display: block;
 }
 
+.hidden{
+  display: none;
+}
 nav {
   text-align: right;
 }
